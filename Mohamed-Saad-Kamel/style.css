@@ -1,0 +1,386 @@
+:root {
+  --text: #000000;
+  --muted: #6b6b6b;
+  --bg: #E8E4E4;
+  --bg-white: #ffffff;
+  --card: #151515;
+  --brand: #111111;
+  --accent: #1b1b1b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-white);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.site-nav a:hover {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.hero-actions {
+  display: inline-flex;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--accent);
+  font-size: 14px;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.section-lead {
+  margin: 0 auto 36px;
+  text-align: center;
+  color: var(--muted);
+  max-width: 780px;
+}
+
+.me {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)),
+    url("img/person-front-computer-working-html.JPG") center/cover no-repeat;
+  margin-top: auto;
+  color: #000;
+}
+
+.cv {
+  display: flex;
+  gap: 19px;
+  justify-content: center;
+}
+
+.me button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3px;
+
+}
+
+.dark {
+  background: #000;
+  color: #fff;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.contact-inf {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-card .icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+
+.contact-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.ss {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.what-i-do {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.work {
+  background: var(--card);
+  color: var(--bg-white);
+  padding: 28px;
+  display: grid;
+  row-gap: 18px;
+  align-content: start;
+  min-height: 150px;
+  border-radius: 2px;
+  border-bottom: 3px solid transparent;
+}
+
+.work h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.work:hover {
+  border-bottom: 4px solid rgb(0, 255, 102);
+
+}
+
+.dev {
+  font-size: 20px;
+  width: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #242424;
+
+}
+
+.icon {
+  font-size: 22px;
+  width: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #242424;
+  font-weight: 700;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px;
+  background-color: #000;
+  color: darkgrey;
+  max-width: 700px;
+  height: 130px;
+  text-align: center;
+  margin: 30px auto;
+
+}
+
+.skills-panel {
+  margin: auto;
+  width: 85%;
+  background: var(--card);
+  color: var(--bg-white);
+  padding: 28px;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill-percentage {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
+.skill-label {
+  font-size: 20px;
+  color: var(--bg-white);
+}
+
+/* Contact */
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 8px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.contact-form input {
+  border: none;
+  border-bottom: 1px solid var(--muted);
+}
+
+.contact-form input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--muted);
+  /* ممكن تغيره لأي لون تاني يعجبك */
+
+}
+
+.contact-form textarea {
+  resize: vertical;
+  border: 1px solid var(--muted);
+  grid-column: 1/3;
+}
+
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid var(--muted);
+}
+
+.contact-form .btn {
+  background: #6b6b6b;
+  border-color: #6b6b6b;
+}
+
+.contact-form .btn:hover {
+  background: #5b5b5b;
+  border-color: #5b5b5b;
+}
+
+/* Footer */
+footer {
+  padding: 14px 0;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+  background-color: var(--bg-white);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-inf {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .what-i-do {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .site-nav ul {
+    gap: 16px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-inf {
+    grid-template-columns: 1fr;
+  }
+}
